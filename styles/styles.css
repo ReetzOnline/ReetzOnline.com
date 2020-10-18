@@ -1,0 +1,173 @@
+/*variables to me used in a number of places*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0e1111;
+  z-index: 999; /*specifies the stack order of an element*/
+}
+
+
+html {
+    scroll-behavior: smooth; }
+
+body {
+  text-align: center;
+  color: #004c4c;
+  margin: 10px;
+  transition: background-color 0.75s ease;
+  background-color: #ffffcc;
+  font-family: arial,sans-serif;
+  font-size: 1.5em; }
+
+/*a img {
+    display:none; }
+
+a:hover img {
+  display:block; }
+  */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: #00cccc; }
+
+h2 {
+  color: #004c4c; }
+
+h4 {
+  color: #004c00; }
+
+#cv {}
+  #cv h4 {
+  color: #00cccc; }
+
+.download {
+  color: #009900; }
+
+
+#me {
+  color: #ffcc00; }
+
+/*element selector*/
+
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center; }
+
+/*child selector & example of nesting*/
+
+
+/*col-lg-3 col-sm-12*/
+.container {
+  vertical-align: middle;
+  position: relative;
+  padding-top: 75px;  }
+  /*width: 50%; }
+*/
+
+
+
+.image {
+    display: block; }
+
+.lid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00cccc;*/
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .2s ease; }
+
+.container:hover .lid {
+  transform: scale(1); }
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.row > div {
+  padding: 10px;
+/*background-color: #ffffcc; */}
+
+#homepad > div {
+  padding: 5px; }
+
+#portfoliopad > div {
+  border: 20px solid #00cccc; }
+
+.reduceSpace {
+   padding-top: 0px;  }
+
+#cv {
+  padding-top: 0px;
+  background-image: url("C:/Users/lauri/projects/html/images/small tree.jpg");
+  background-size: 50%;
+  color: white; }
+  #cv #cvEdu .tdend {
+    padding-bottom: 30px; }
+  #cv #cvCourses tr {
+    line-height: 35px;
+    vertical-align: top; }
+  #cv .row > div {
+    padding: 30px;
+    padding-left: 60px; }
+  #cv .row > .col-12 {
+    padding-top: 60px; }
+  #cv .row > #cvDown {
+    padding-bottom: 60px; }
+  #cv #try {
+    transition: .5s ease; }
+
+/*#cv > .container {
+  padding: 10px; }*/
+
+.lefted {
+  text-align: left; }
+
+.container > #digits {
+  padding-top: -60px;  }
+
+
+/*Descendent and multiple selectors
+ul li, td {
+  font-size: 14px; }
+  */
+
+ul {
+  padding-left: 13px; }
+  ul li {
+    padding-bottom: 10px; }
+
+button {
+  background-color: #009900;
+  font-weight: bold;
+  font-size: 14px; }
+
+/*pseudoclass selector*/
+button:hover {
+  background-color: #ffcc00; }
+
+@media (max width: 380px) {
+  .optional {
+    display: none; } }
+/*# sourceMappingURL=styles.css.map */
+/* from home page <img src="software_tree.jpg" width=75%> */
+
+/*# sourceMappingURL=styles.css.map */
+
+/*<a href="data/Lauritta Burrows CV - Sofware Developer - May 2020.pdf" class="download"><h3>View my CV here</h3></a>*/
