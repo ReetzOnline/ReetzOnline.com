@@ -3,13 +3,18 @@ window.onload = function() {
   var myCV = document.createElement("IMG");
   myCV.setAttribute("src", "images/cv.png");
   myCV.setAttribute("id", "try");
+  myCV.setAttribute("opacity", "0");
   document.getElementById('downLoad').appendChild(myCV);
   document.getElementById('try').style.visibility = 'hidden';
+  document.getElementById('try').style.opacity = '0';
+  document.getElementById('try').style.transition = 'visibility 0s 1s, opacity 1s linear';
 }
 
 function showMe() {
   window.onload;
   document.getElementById('try').style.visibility = 'visible';
+  document.getElementById('try').style.opacity = '1';
+  document.getElementById('try').style.transition = 'opacity 1s linear';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
